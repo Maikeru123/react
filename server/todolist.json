@@ -1,0 +1,30 @@
+{
+    "toDoList": [
+      {
+        "title": "Buy groceries",
+        "description": "Purchase fruits, vegetables, and dairy products.",
+        "date": "2025-02-22"
+      },
+      {
+        "title": "Complete work report",
+        "description": "Finish the monthly performance report for the team.",
+        "date": "2025-02-23"
+      },
+      {
+        "title": "Exercise",
+        "description": "Go for a 30-minute jog in the park.",
+        "date": "2025-02-22"
+      },
+      {
+        "title": "Call Mom",
+        "description": "Check in with mom to see how she's doing.",
+        "date": "2025-02-22"
+      },
+      {
+        "title": "Schedule dentist appointment",
+        "description": "Call to book an appointment for next week.",
+        "date": "2025-02-23"
+      }
+    ]
+  }
+  

@@ -1,7 +1,23 @@
 import React from "react";
-import ClickMe from "./components/ClickMe";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import MainLayout from "./components/layouts/mainLayout";
+import Todos from "./components/pages/Todos";
+import Todo from "./components/pages/Todo";
+
+const router = createBrowserRouter(createRoutesFromElements(<Route path ="/" element={MainLayout}>
+  <Route index element={Todos} />
+  <Route path = "/todo/:id" element={Todo}/>
+</Route>)
+);
+
+
 const App = () => {
-  return <div><ClickMe /></div>;
+  return <RouterProvider router =  {router}/>;
 };
 
 export default App;
