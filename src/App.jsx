@@ -9,10 +9,13 @@ import MainLayout from "./components/layouts/mainLayout";
 import Todos from "./components/pages/Todos";
 import Todo from "./components/pages/Todo";
 
-const router = createBrowserRouter(createRoutesFromElements(<Route path ="/" element={MainLayout}>
-  <Route index element={Todos} />
-  <Route path = "/todo/:id" element={Todo}/>
-</Route>)
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<Todos/>} />
+      <Route path="/todo/:id" element={<Todo/>} />
+    </Route>
+  )
 );
 
 
